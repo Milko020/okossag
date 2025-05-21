@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.naptar.NaptarController"
+      spacing="10">
+
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <MenuBar>
+        <Menu text="Fájl">
+            <MenuItem fx:id="betoltes" text="Események betöltése"/>
+        </Menu>
+    </MenuBar>
+
+    <HBox spacing="10">
+        <VBox spacing="10" prefWidth="300">
+            <Label text="Események:"/>
+            <ListView fx:id="listView" prefWidth="300" prefHeight="300"/>
+        </VBox>
+        <VBox spacing="10" prefWidth="300">
+            <Label text="Részletek:"/>
+            <TextArea fx:id="reszletekArea" editable="false" prefWidth="300" prefHeight="300"/>
+        </VBox>
+    </HBox>
+
+    <Button fx:id="torlesBtn" text="Kijelölt törlése" maxWidth="150"/>
+
+    <Label text="Új esemény:"/>
+
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <TextField fx:id="nevField" promptText="Esemény neve" prefWidth="150"/>
+        <DatePicker fx:id="datePicker"/>
+        <Spinner fx:id="oraSpinner" prefWidth="60"/>
+        <Spinner fx:id="percSpinner" prefWidth="60"/>
+        <TextField fx:id="megjegyzesField" promptText="Megjegyzés" prefWidth="150"/>
+        <Button fx:id="hozzaadBtn" text="Hozzáadás"/>
+    </HBox>
+
+</VBox>
