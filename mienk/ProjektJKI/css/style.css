@@ -1,0 +1,87 @@
+body {
+    background-color: #93f28e;
+    min-height: 10vh;
+}
+
+.nav-link.active {
+    text-shadow: 1px 2px white;
+    text-decoration: underline !important;
+}
+
+.start {
+    background-image: url('img/cover_image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.tours-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tour-box {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #646060;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.tour-box:hover {
+    background-color: #d3d3d3;
+    color: blue;
+    box-shadow: 2px 7px 20px black;
+}
+
+#form-3 label {
+    font-weight: bold;
+    color: #555;
+}
+
+#form-3 {
+    padding: 2rem;
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    max-width: 960px;
+    margin: 1rem auto;
+    font-size: 14pt;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.site-footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.site-footer p {
+    margin: 0px;
+}
+
+@media (max-width: 576px) {
+    .site-footer {
+        background-color: #3c6ef0;
+    }
+}
+
+@media (min-width: 576px) {
+    .nav-link {
+        font-size: 1.2rem;
+    }
+}
